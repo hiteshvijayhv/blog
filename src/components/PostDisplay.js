@@ -7,28 +7,27 @@ function PostDisplay({ match }) {
     const [pos, setPos] = useState('')
     const [apiData, setApiData] = useState('')
     
+    const [blog, setBlog] = useState('')
     useEffect(() => {
         console.log(match.params.postdisplay)
         setPos(match.params.postdisplay)
         fetchItems()
+        
     }, [])
-
     const fetchItems = async() => {
         const data = await getResponse()
         setApiData(data)
         console.log(data)
     }
-    const markdown = apiData.data.blogs[pos].post
-  
-    
+
     return (
         <div>
             <h1>
             {apiData.data && (
                     <div>
+                    
                           <h1>{apiData.data.blogs[pos].title}</h1>
-                          <p>{apiData.data.blogs[pos].post}</p>
-                          <p><ReactMarkdown children={markdown} /></p>
+                          <p><ReactMarkdown children={apiData.data.blogs[pos].post} /></p>
                     </div>
                 )}
             </h1>
