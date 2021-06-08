@@ -39,7 +39,7 @@ function Blog() {
                           {apidata.data.blogs.slice(indexOfFirstPost, indexOfLastPost).map((xtitle, index)=>{
                             return(
                             <div className='blog-items' key={index}>
-                                <Link to='/postdisplay'>
+                                <Link to={`/blogs/${index}/${xtitle.title}`}>
                                     <p>{xtitle.title}</p>
                                 </Link>
                                 <p>{xtitle.date}</p>

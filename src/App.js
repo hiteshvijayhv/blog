@@ -13,7 +13,7 @@ function App() {
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/blogs' exact component={Blog} />
-            <Route path='/postdisplay' component={PostDisplay} />
+            <Route path='/blogs/:postdisplay' component={PostDisplay} />
           </Switch>
       </div>
     </Router>
