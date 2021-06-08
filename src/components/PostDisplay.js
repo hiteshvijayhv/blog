@@ -5,11 +5,13 @@ function PostDisplay({ match }) {
 
     const [pos, setPos] = useState('')
     const [apiData, setApiData] = useState('')
+    
     useEffect(() => {
         console.log(match.params.postdisplay)
         setPos(match.params.postdisplay)
         fetchItems()
     }, [])
+
     const fetchItems = async() => {
         const data = await getResponse()
         setApiData(data)

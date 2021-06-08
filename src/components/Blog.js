@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { getResponse } from '../API/apiCall'
 import Pagination from './Pagination'
 import { Link } from 'react-router-dom'
@@ -11,8 +11,10 @@ function Blog() {
     const [postsPerPage] = useState(10);
     const [apidata, setapidata] = useState('')
     const [noOfPosts, setNoOfPosts] = useState(0)
-    const [apiCalled, setApiCalled] = useState(false)
     
+    useEffect(() => {
+        getData()
+    }, [])
 
     const getData = async() => {
         const data = await getResponse()
@@ -21,10 +23,7 @@ function Blog() {
         setapidata(data)
     }
 
-    if(!apiCalled){
-        getData()
-        setApiCalled(true)
-    }
+    
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
     const paginate = pageNumber => setCurrentPage(pageNumber);
