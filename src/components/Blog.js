@@ -18,7 +18,6 @@ function Blog() {
 
     const getData = async() => {
         const data = await getResponse()
-        console.log(data)
         setNoOfPosts(data.data.blogs.length)
         setapidata(data)
     }
@@ -30,8 +29,7 @@ function Blog() {
 
     return (
         <div>
-            <h1>Blogs</h1>
-            <button onClick={getData}>get data</button> 
+            <h1>Posts</h1>
             <h1>
                 {apidata.data && (
                     <div>
@@ -42,7 +40,7 @@ function Blog() {
                                     <p>{xtitle.title}</p>
                                 </Link>
                                 <p>{xtitle.date}</p>
-                                <p>{xtitle.post}</p>
+                                <p>{xtitle.post_description}</p>
                             </div>
                             )
                         })

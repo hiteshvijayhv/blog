@@ -1,7 +1,7 @@
 import Axios from 'axios'
 
-//const API_ENDPOINT = 'https://gist.githubusercontent.com/hiteshvijayhv/2b26e64f2c1f28315441b2a6500ddfb8/raw/e0c7b7ce0262e2a2c0e505154fad0d21060d3aa4/blogs.json'
-const API_ENDPOINT = 'https://gist.githubusercontent.com/hiteshvijayhv/229562bc4cdb915bf26d340aae98b0b7/raw/7de6c7cef972050b29610863c1659e33c5592b7e/testingblog.json'
+//const API_ENDPOINT = 'https://api.jsonbin.io/b/60c41dacb274176a77e5b148/16'
+const API_ENDPOINT = 'https://gist.githubusercontent.com/hiteshvijayhv/45d93a12ff87c9a2fed019c35351f440/raw/f0575555d9446e51533d1b0d3884dc367dfd035d/testingjsonnn.json'
 export const getResponse = async() => {
     
     var response;
