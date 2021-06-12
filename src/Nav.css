@@ -1,4 +1,33 @@
 .nav-links {
     display: flex;
     justify-content: space-between;
+    margin: 5%;
+}
+
+.home-link {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: 700;
+    color: #282828;
+}
+.surname {
+    margin-left: 5%;
+    font-size: 30px;
+    font-weight: 400;
+    color: #808080;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.blog-div {
+    margin-top: 9px;
+    color: #808080;
+    font-size: 20px;
 }

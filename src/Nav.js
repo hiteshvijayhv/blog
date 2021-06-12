@@ -6,17 +6,19 @@ function Nav() {
 
     return (
         <nav>
-        
-            <p className="nav-links">
+            <div className="nav-links">
                 <Link className='link' to='/'>
-                    <p>Home</p>
+                    <div className='home-link'>
+                        <div className='name'>Hitesh</div>
+                        <div className='surname'>Vijay</div>
+                    </div>
                 </Link>
 
                 <Link className='link' to='/blogs'>
-                    <p>Blog</p>
+                    <div className='blog-div'>Blog</div>
                 </Link>
                 
-            </p>
+            </div>
          
         </nav>
     )
