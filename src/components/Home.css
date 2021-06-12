@@ -1,0 +1,41 @@
+.main-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.home-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-div {
+    display: flex;
+    justify-self: center;
+    height: 100%;
+}
+
+.info-div {
+   margin: 10%;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+@media (max-width: 720px){
+    .home-center{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img-div {
+        margin: 0;
+    }
+
+}

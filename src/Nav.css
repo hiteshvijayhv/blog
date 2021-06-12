@@ -1,7 +1,9 @@
 .nav-links {
     display: flex;
     justify-content: space-between;
-    margin: 5%;
+    margin: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .home-link {
