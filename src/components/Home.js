@@ -14,8 +14,21 @@ function Home() {
                 </div>
 
                     <div className='info-div'>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                         standard dummy 
+                         <p>Hey👋, I am a Engineering undergrad who is exploring web development.
+                              The technologies I use are React for the front end and Node with Express for the server side of things.</p>
+                         <div className='social'>
+                             <a href='https://twitter.com/hiteshvijayhv' target="_blank">
+                                 <img  className='icon' src='https://user-images.githubusercontent.com/46933160/121767463-ef387980-cb75-11eb-9413-b32129def4ce.png'>
+
+                                 </img>
+                             </a>
+                             <a href='https://github.com/hiteshvijayhv' target="_blank">
+                                 <img  className='icon' src='https://user-images.githubusercontent.com/46933160/121767611-d1b7df80-cb76-11eb-9c96-f16cc16214ec.png'>
+
+                                 </img>
+                             </a>
+                    
+                         </div>
                     </div>
                 
                 </div>

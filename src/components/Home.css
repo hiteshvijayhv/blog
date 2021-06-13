@@ -20,7 +20,7 @@
 }
 
 .info-div {
-   margin: 10%;
+   margin: 10%
 }
 
 .profile-img {
@@ -28,7 +28,12 @@
     border-radius: 100%;
 }
 
-@media (max-width: 720px){
+.icon {
+    width: 10%;
+    margin: 10px;
+}
+
+@media (max-width: 950px){
     .home-center{
         display: flex;
         flex-direction: column;
@@ -36,6 +41,12 @@
     
     .img-div {
         margin: 0;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .profile-img {
+        width: 100%;
     }
 
 }

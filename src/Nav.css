@@ -1,7 +1,7 @@
 .nav-links {
     display: flex;
     justify-content: space-between;
-    margin: 1%;
+    margin-top: 1%;
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -10,16 +10,18 @@
     display: flex;
     justify-content: center;
     margin-left: 5%;
+    width: 100%;
 }
 
 .name {
-    font-size: 30px;
+    font-size: 190%;
     font-weight: 700;
     color: #282828;
 }
+
 .surname {
     margin-left: 5%;
-    font-size: 30px;
+    font-size: 190%;
     font-weight: 400;
     color: #808080;
 }
@@ -31,10 +33,25 @@
 .blog-div {
     margin-top: 9px;
     color: #808080;
-    font-size: 20px;
+    font-size: 125%;
 }
 
 .blog-div:hover{
     color: black;
     transition: color 0.8s ease;
+}
+
+@media (max-width: 720px){
+    .name {
+        font-size: 190%;
+        font-weight: 700;
+        color: #282828;
+    }
+    
+    .surname {
+        margin-left: 5%;
+        font-size: 190%;
+        font-weight: 400;
+        color: #808080;
+    }
 }
