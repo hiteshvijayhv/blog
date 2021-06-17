@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { getResponse } from '../API/apiCall'
 import ReactMarkdown from 'react-markdown';
-
+import './PostDisplay.css'
 function PostDisplay({ match }) {
 
     const [pos, setPos] = useState('')
@@ -21,7 +21,7 @@ function PostDisplay({ match }) {
     }
 
     return (
-        <div>
+        <div className='main-body'>
             <h1>
             {apiData.data && (
                     <div>

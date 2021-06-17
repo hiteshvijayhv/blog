@@ -30,17 +30,19 @@ function Blog() {
     return (
         <div>
             <h1>Posts</h1>
-            <h1>
+            <div>
                 {apidata.data && (
-                    <div>
+                    <div className='container'>
                           {apidata.data.blogs.slice(indexOfFirstPost, indexOfLastPost).map((xtitle, index)=>{
                             return(
                             <div className='blog-items' key={index}>
+                                <div className='date'>{xtitle.date}</div>
+
                                 <Link to={`/blogs/${index}/${xtitle.title}`}>
-                                    <p>{xtitle.title}</p>
+                                    <div className='title-div'>{xtitle.title}</div>
                                 </Link>
-                                <p>{xtitle.date}</p>
-                                <p>{xtitle.post_description}</p>
+                                
+                                <div className='description-div'>{xtitle.post_description}</div>
                             </div>
                             )
                         })
@@ -48,7 +50,7 @@ function Blog() {
                     </div>
                 )}
                  
-            </h1>
+            </div>
             <Pagination
             postsPerPage={postsPerPage}
             totalPosts={noOfPosts}

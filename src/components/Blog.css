@@ -1,3 +1,26 @@
 .blog-items {
-    border: 2px solid red;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: 7px 8px grey;
+}
+
+.container {
+    margin: 10%;
+}
+
+.date {
+    color: grey;
+    font-size: 20px;
+    float: right;
+}
+
+.title-div {
+    
+}
+
+.description-div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 500;
 }
