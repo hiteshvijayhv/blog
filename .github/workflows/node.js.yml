@@ -27,7 +27,13 @@ jobs:
      
     - name: Build project
       run: npm run build
-
+      
+    - name: netlify
+      run: netlify deploy
+      
+    - name: Deploy to Netlify
+      run: netlify deploy --prod
+      
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
       with:
