@@ -22,7 +22,7 @@ function PostDisplay({ match }) {
 
     return (
         <div className='main-body'>
-            <h1>
+            <div className='container'>
             {apiData.data && (
                     <div>
                     
@@ -30,7 +30,7 @@ function PostDisplay({ match }) {
                           <p><ReactMarkdown children={apiData.data.blogs[pos].post} /></p>
                     </div>
                 )}
-            </h1>
+            </div>
         </div>
     )
 }

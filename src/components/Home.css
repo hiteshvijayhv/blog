@@ -20,7 +20,9 @@
 }
 
 .info-div {
-   margin: 10%
+   margin-top: 10%;
+   margin-left: 5%;
+   margin-right: 5%;
 }
 
 .profile-img {
@@ -41,12 +43,16 @@
     
     .img-div {
         margin: 0;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 8%;
+        margin-right: 8%;
     }
 
     .profile-img {
         width: 100%;
     }
 
+    .icon {
+        width: 10%;
+        margin: 10px;
+    }
 }
